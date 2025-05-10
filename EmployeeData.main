@@ -1,0 +1,20 @@
+package com.emp.data;
+
+public class EmployeesData {
+	public static void main(String []args)
+	{
+		
+		Employee e1=new Manager("sai",2,1900);
+        Employee e2=new Intern("prem",3,2000);
+		Employee e3=new Developer("shiv",4,2500);
+		
+		Employee[]  employees= {e1,e2,e3};
+		
+		 for(Employee e:employees)
+		 {
+			 System.out.println(e.showDetails());
+			 System.out.println(e.calculateBonus());
+		 }
+	}
+
+}
